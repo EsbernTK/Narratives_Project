@@ -11,9 +11,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf3ad08ffe0d4b94fa4c7a945edddc5a, type: 3}
   m_Name: Starting Room
   m_EditorClassIdentifier: 
-  description: You are in a maze of twisty little passages, all alike.
+  description: 'You arrive at the palace entrance, tired after your long journy. A
+    man is waiting outside and greets you. He says
+
+    "Hello stranger, welcome to {0}, we have been expecting you and have prepared
+    a tour of our fine museum for you to learn of our country''s history. Follow me"'
   roomName: starting room
   exits:
-  - keyString: north
-    exitDescription: ' You see a dark doorway to the north.'
-    valueRoom: {fileID: 11400000, guid: 60b59eaae23ee0d4dae85a9316e9c6fe, type: 2}
+  - keyString: him
+    exitDescription: ' The man heads towards the castle and goes through a door'
+    valueRoom: {fileID: 11400000, guid: 5d1dd6982527247478aec5116c812bfd, type: 2}

@@ -11,4 +11,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 587b38deedc3c7c42a75f927342a5359, type: 3}
   m_Name: Tell
   m_EditorClassIdentifier: 
-  keyWord: 
+  keyWord: tell

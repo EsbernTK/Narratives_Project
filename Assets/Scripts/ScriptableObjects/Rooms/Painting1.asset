@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf3ad08ffe0d4b94fa4c7a945edddc5a, type: 3}
+  m_Name: Painting1
+  m_EditorClassIdentifier: 
+  description: 'You are in a vast hall. The decorations are beautiful and there are
+    paintings on all the walls. The man is standing at a painting, you go to him.
+    He says
+
+    "This painting shows {0}"'
+  roomName: Painting1
+  exits:
+  - keyString: him
+    exitDescription: The man goes to another painting
+    valueRoom: {fileID: 11400000, guid: b49a03b66db549b479c2d36de6abe0f0, type: 2}
+  generatedDescription: "You are in a vast hall. The decorations are beautiful and
+    there are paintings on all the walls. The man is standing at a painting, you go
+    to him. He says\n\"This painting shows The second war.\n The war was short with
+    only two battles, the first being \n The battle of Voolia was hard fought by Klar
+    Valiks's army, even when outnumbered and outclassed they ultimately won the battle
+    decisivly, only losing 49men, when we lost 109 men. \n It ultimately ended with
+    a final battle. \nThe final battle was long and tough, but finally we beat the
+    enemy army and succeded in our conquest\""

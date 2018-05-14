@@ -14,8 +14,12 @@ public class GameManagerSimulator : MonoBehaviour {
     int epoch = 0;
     // Use this for initialization
 
-    [SerializeField]
+    //[SerializeField]
+    [HideInInspector]
     public List<WorldState> WorldEvents = new List<WorldState>();
+
+
+    public List<Room> rooms;
     void Start () {
         instance = this;
         storyGenerator = new StoryGenerator();
@@ -33,26 +37,40 @@ public class GameManagerSimulator : MonoBehaviour {
         {
             c.Countries = countries;
         }
+
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        epoch++;
-        if (epoch % 1 == 0)
+        if (epoch < 100)
         {
-            
-            foreach (Country c in countries)
+            for (int i = 0; i < 100; i++)
             {
+                epoch++;
+                if (epoch % 1 == 0)
+                {
 
-                c.DecideOnAction();
+                    foreach (Country c in countries)
+                    {
+
+                        c.DecideOnAction();
+                    }
+
+                }
             }
-            
         }
-        if (Input.anyKeyDown)
+        if(epoch >= 100)
         {
-            foreach(WorldState state in WorldEvents)
+            for (int i = 0; i < rooms.Count; i++)
             {
-                Debug.Log(storyGenerator.GenerateStateStory(state));
+                if(i == 0)
+                {
+                    rooms[i].generatedDescription = string.Format(rooms[i].description, countries[0].name);
+                }
+                else
+                {
+                    rooms[i].generatedDescription = string.Format(rooms[i].description, storyGenerator.GenerateStateStory(WorldEvents[i]));
+                }
             }
         }
 	}

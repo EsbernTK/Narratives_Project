@@ -11,4 +11,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 519a67f25d1b06b4dba53fa17c00371d, type: 3}
   m_Name: Follow
   m_EditorClassIdentifier: 
-  keyWord: 
+  keyWord: follow

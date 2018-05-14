@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ResolveWar : Action {
+    public float n;
+    public float chances;
+    public War temp;
     public ResolveWar(Country owner) : base(owner)
     {
     }
@@ -15,9 +18,9 @@ public class ResolveWar : Action {
     {
         base.DoAction(otherCountry);
         Battle action = new Battle();
-        float n = action.battleResult;
-        float chances = actionOwner.ArmyStrength/(actionOwner.ArmyStrength + otherCountry.ArmyStrength);
-        War temp = (War)actionOwner.currentState;
+        n = action.battleResult;
+        chances = actionOwner.ArmyStrength/(actionOwner.ArmyStrength + otherCountry.ArmyStrength);
+        temp = (War)actionOwner.currentState;
         
         if (n < chances)
         {

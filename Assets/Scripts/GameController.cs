@@ -19,8 +19,9 @@ public class GameController : MonoBehaviour {
 		roomNavigation = GetComponent<RoomNavigation> ();	
 	}
 
-	void Start()
+	IEnumerator Start()
 	{
+        yield return new WaitForSeconds(1f);
 		DisplayRoomText ();
 		DisplayLoggedText ();
 	}
@@ -40,7 +41,7 @@ public class GameController : MonoBehaviour {
 
 		string joinedInteractionDescriptions = string.Join ("\n", interactionDescriptionsInRoom.ToArray ());
 
-		string combinedText = roomNavigation.currentRoom.description + "\n" + joinedInteractionDescriptions;
+		string combinedText = roomNavigation.currentRoom.generatedDescription + "\n" + joinedInteractionDescriptions;
 
 		LogStringWithReturn (combinedText);
 	}

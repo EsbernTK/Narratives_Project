@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf3ad08ffe0d4b94fa4c7a945edddc5a, type: 3}
+  m_Name: painting4
+  m_EditorClassIdentifier: 
+  description: 'You reach the man and he says
+
+    "This painting shows {0}"'
+  roomName: painting4
+  exits:
+  - keyString: him
+    exitDescription: The man goes to another painting
+    valueRoom: {fileID: 11400000, guid: 75f76fd9417b6a84e9cd43f976f376b2, type: 2}
+  generatedDescription: "You reach the man and he says\n\"This painting shows A period
+    of peace that stretched for a long time. \n There was a time of recuitment in
+    the country.\n Many soldiers were recruited from the population, most were content
+    but some were unhappy with their new living conditions, though it was not a problem\n
+    The country could support many more people than there were, so the government
+    gave all citizens more food, such that they might be insentivised to have more
+    children\n There was a time of recuitment in the country.\n Many soldiers were
+    recruited from the population, most were content but some were unhappy with their
+    new living conditions, though it was not a problem\n There was a time of recuitment
+    in the country.\n Many soldiers were recruited from the population, most were
+    content but some were unhappy with their new living conditions, though it was
+    not a problem\n The country could support many more people than there were, so
+    the government gave all citizens more food, such that they might be insentivised
+    to have more children\n However after this time of peace came a war decleration
+    \""
